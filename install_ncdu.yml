@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  tasks:
+
+  - name: apt-get update && install ncdu
+    apt:
+      update_cache: yes
+      name: ncdu
+      state: present
