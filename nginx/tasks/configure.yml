@@ -1,0 +1,6 @@
+---
+#configure
+- name: index.html
+  copy: src=index.html dest=/usr/share/nginx/www/index.html
+  notify:
+    - restart nginx service
