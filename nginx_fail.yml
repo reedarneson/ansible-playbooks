@@ -1,0 +1,5 @@
+- name: copy homer
+  copy: src=doh.gif dest=/var/www/html/doh.gif
+
+- name: copy index_fail.html
+  copy: src=index_fail.html dest=/var/www/html/index.html
