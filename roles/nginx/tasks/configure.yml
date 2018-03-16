@@ -1,5 +1,8 @@
 ---
 #configure
+- name: copy zoidberg
+  copy: src=zoidberg.png dest=/var/www/html/zoidberg.png
+
 - name: copy index.html
   template:
     src: templates/index.html.j2
