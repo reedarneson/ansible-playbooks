@@ -1,5 +1,5 @@
 ---
-- name: my sitefile
+- name: my nginx sitefile
   hosts: all
   roles:
     - nginx
