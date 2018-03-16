@@ -7,4 +7,6 @@
 
 - name: copy custom.html
   template:
-    src: templates/custom.html.j2
+    src: templates/custom.html.j2 dest=/var/www/html/index.html
+  notify:
+    - restart nginx service  
