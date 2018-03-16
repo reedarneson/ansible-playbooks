@@ -1,6 +1,11 @@
 <html lang="en">
 <body>
-  <img src="zoidberg.png" height=100px>
-  You are running on host: {{ inventory_hostname }}<br /> {{ default_banner }}
+  <center>
+    <br /><br />
+    <img src="zoidberg.png" height=100px><br />
+    You are running on host: {{ inventory_hostname }}<br />
+    {{ default_banner }}<br /><br />
+    {{ runtime }}
+  </center>
 </body>
 </html>
