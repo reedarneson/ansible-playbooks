@@ -1,13 +1,8 @@
 ---
 #configure
-- name: index.html
-  copy: src=index.html dest=/var/www/html/index.html
-  notify:
-    - restart nginx service
-
-- name: copy custom.html
+- name: copy index.html
   template:
-    src: templates/custom.html.j2
-    dest: /var/www/html/custom.html
+    src: templates/index.html.j2
+    dest: /var/www/html/index.html
   notify:
     - restart nginx service
